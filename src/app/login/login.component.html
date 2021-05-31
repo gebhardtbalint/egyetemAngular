@@ -2,13 +2,13 @@
   <mat-card fxFlex="25">
     <form fxLayoutAlign="stretch" fxLayout="column">
       <mat-form-field>
-        <input matInput placeholder="Felhasználónév">
+        <input matInput class="form-control" placeholder="Felhasználónév" id="username" name="username" [(ngModel)]="username">
       </mat-form-field>
 
       <mat-form-field>
-        <input matInput type="password" placeholder="Jelszó">
+        <input matInput class="form-control" type="password" placeholder="Jelszó" id="password" name="password" [(ngModel)]="password">
       </mat-form-field>
-      <button mat-button type="submit">Bejelentkezés</button>
+      <button mat-button type="submit" color="primary" (click)="login()">Bejelentkezés</button>
     </form>
   </mat-card>
 </div>
