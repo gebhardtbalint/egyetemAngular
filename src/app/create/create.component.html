@@ -1,24 +1,16 @@
 <div class="row justify-content-center">
-    <form #ngForm="ngForm"fxLayout="column" style="width: 50%">
+    <form #ngForm="ngForm" fxLayout="column" style="width: 50%; margin-top: 50px">
       <div class="form-group">
-        <input type="text" class="form-control"
-               name = nameinput id="nameinput" required
-               placeholder="Name" [(ngModel)]="adat.name">
+        <input type="text" class="form-control"name = nameinput required placeholder="Name" [(ngModel)]="adat.name">
       </div>
       <div class="form-group">
-        <input type="text" class="form-control"
-               name = regioninput id="regioninput" required
-               placeholder="Nickname" [(ngModel)]="adat.nickname">
+        <input type="text" class="form-control" name = nicknameinput required placeholder="Nickname" [(ngModel)]="adat.nickname">
       </div>
       <div class="form-group">
-        <input type="text" class="form-control"
-               name = wordsinput id="wordsinput" required
-               placeholder="Status" [(ngModel)]="adat.status">
+        <input type="text" class="form-control" name = statusinput required placeholder="Status" [(ngModel)]="adat.status">
       </div>
       <div class="form-group">
-        <input type="text" class="form-control"
-               name = coatofarmsinput id="coatofarmsinput" required
-               placeholder="Birthday" [(ngModel)]="adat.birthday">
+        <input type="text" class="form-control" name = birthdadyinput required placeholder="Birthday" [(ngModel)]="adat.birthday">
       </div>
 
       <button type="submit" class="btn btn-primary" (click)="save()" [disabled]="!ngForm.valid">Create</button>
