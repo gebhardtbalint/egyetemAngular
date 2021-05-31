@@ -7,7 +7,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'beadando';
+  title = 'Breaking Bad characters';
 
   constructor(
     private router: Router,
@@ -20,7 +20,7 @@ export class AppComponent {
   }
 
   logout() {
-
+    localStorage.removeItem('token');
   }
 }
 
