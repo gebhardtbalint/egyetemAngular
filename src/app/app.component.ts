@@ -16,11 +16,12 @@ export class AppComponent {
   }
 
   navigate(): void{
-    this.router.navigate(['details', 'valami']);
+
   }
 
   logout() {
     localStorage.removeItem('token');
+    this.router.navigate(['login']);
   }
 }
 

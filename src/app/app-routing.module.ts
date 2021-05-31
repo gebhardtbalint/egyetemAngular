@@ -5,6 +5,7 @@ import {UpdateComponent} from "./update/update.component";
 import { ListComponent } from "./list/list.component";
 import { CreateComponent } from './create/create.component';
 import {LoginGuard} from "./login.guard";
+import {LogoutGuard} from "./logout.guard";
 
 const routes: Routes = [
  /* {path:'login', component:LoginComponent},
@@ -13,10 +14,10 @@ const routes: Routes = [
   {path:'list', component:CreateComponent, canActivate: [LoginGuard]}  */
 
 
-  {path:'login', component:LoginComponent},
-  {path:'update', component:UpdateComponent},
-  {path:'list', component:ListComponent},
-  {path:'create', component:CreateComponent}
+  {path:'login', component:LoginComponent, canActivate: [LogoutGuard]},
+  {path:'update', component:UpdateComponent, canActivate: [LoginGuard]},
+  {path:'list', component:ListComponent, canActivate: [LoginGuard]},
+  {path:'create', component:CreateComponent, canActivate: [LoginGuard]}
 
 
 ];

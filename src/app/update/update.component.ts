@@ -26,7 +26,7 @@ export class UpdateComponent implements OnInit {
     this.adat = this.service.adatom[this.idupdate];
     if (this.idupdate > this.service.adatom.length || this.idupdate < 0)
     {
-      alert('ID not found');
+      alert('Nem létezik ilyen ID!');
     }
   }
 
