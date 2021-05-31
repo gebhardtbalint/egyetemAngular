@@ -1,1 +1,18 @@
-<p>list works!</p>
+<a (click)="logout()" href="/login"
+   role="button"
+   class="btn btn-outline-danger"> Logout
+</a>
+<table class="table" *ngIf="service.adatom">
+  <thead>
+  <th>Author</th>
+  <th>Quote</th>
+  <th></th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let adat of service.adatom">
+    <td>{{adat.author}}</td>
+    <td>{{adat.quote}}</td>
+    <td><button type="button" class="btn btn-outline-danger" (click)="delete(adat)">Delete</button></td>
+  </tr>
+  </tbody>
+</table>
