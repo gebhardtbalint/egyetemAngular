@@ -15,10 +15,10 @@ export class ListComponent implements OnInit{
   ) { }
 
   ngOnInit(): void {
-    this.getHouses();
+    this.getData();
   }
 
-  getHouses(): void {
+  getData(): void {
     if (this.service.adatom.length === 0) {
       this.httpClient.get<any>('').subscribe(
         response => {

@@ -4,14 +4,14 @@
 </a>
 <table class="table" *ngIf="service.adatom">
   <thead>
-  <th>Author</th>
-  <th>Quote</th>
+  <th style="color: white">Author</th>
+  <th style="color: white">Quote</th>
   <th></th>
   </thead>
   <tbody>
   <tr *ngFor="let adat of service.adatom">
-    <td>{{adat.author}}</td>
-    <td>{{adat.quote}}</td>
+    <td style="color: white">{{adat.author}}</td>
+    <td style="color: white">{{adat.quote}}</td>
     <td><button type="button" class="btn btn-outline-danger" (click)="delete(adat)">Delete</button></td>
   </tr>
   </tbody>

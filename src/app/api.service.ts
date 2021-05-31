@@ -8,7 +8,6 @@ import {HttpClient} from '@angular/common/http';
 export class ApiService{
 
   public adatom: MyAdat[] = [];
-   //apiUrl = 'https://breaking-bad-quotes.herokuapp.com/v1/quotes/5';
 
   constructor(
     private http: HttpClient

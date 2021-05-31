@@ -7,10 +7,16 @@ import { CreateComponent } from './create/create.component';
 import {LoginGuard} from "./login.guard";
 
 const routes: Routes = [
-  {path:'login', component:LoginComponent},
+ /* {path:'login', component:LoginComponent},
   {path:'details', component:DetailsComponent, canActivate: [LoginGuard]},
   {path:'list', component:ListComponent, canActivate: [LoginGuard]},
-  {path:'list', component:CreateComponent, canActivate: [LoginGuard]}
+  {path:'list', component:CreateComponent, canActivate: [LoginGuard]}  */
+
+
+  {path:'login', component:LoginComponent},
+  {path:'details', component:DetailsComponent},
+  {path:'list', component:ListComponent},
+  {path:'list', component:CreateComponent}
 
 
 ];

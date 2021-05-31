@@ -16,6 +16,7 @@ import { ListComponent } from './list/list.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { CreateComponent } from './create/create.component';
+import {ApiService} from './api.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { CreateComponent } from './create/create.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [LoginComponent, ApiService, ListComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
