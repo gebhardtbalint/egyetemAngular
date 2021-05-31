@@ -20,7 +20,7 @@ export class ListComponent implements OnInit{
 
   getData(): void {
     if (this.service.adatom.length === 0) {
-      this.httpClient.get<any>('').subscribe(
+      this.httpClient.get<any>('https://breakingbadapi.com/api/characters').subscribe(
         response => {
           this.service.adatom = response;
           localStorage.setItem('data', JSON.stringify(this.service.adatom));

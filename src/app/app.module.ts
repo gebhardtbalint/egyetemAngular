@@ -38,7 +38,7 @@ import {ApiService} from './api.service';
     MatCardModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [LoginComponent, ApiService, ListComponent],
   bootstrap: [AppComponent]

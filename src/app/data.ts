@@ -1,4 +1,6 @@
 export class MyAdat {
-  author: string;
-  quote: string;
+  name: string;
+  birthday: string;
+  nickname: string;
+  status: string;
 }
